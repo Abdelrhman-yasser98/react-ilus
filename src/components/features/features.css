@@ -1,0 +1,44 @@
+.features{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.features2 .link {
+    color: hsl(229, 8%, 60%);
+    font-size: small;
+    font-weight: 400;
+    padding: 22px 30px;
+    text-decoration: none;
+    border-bottom: 1px solid hsl(229, 8%, 60%) ;
+}
+.features2 .link:hover {
+    color: hsl(0, 94%, 66%)
+}
+.features2 .active {
+    padding: 20px 30px;
+    border-bottom: 3px solid hsl(0, 94%, 66%)
+
+}
+@media (max-width: 499px) {
+    .features {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features1 {
+        width: 80%;
+    }
+    .features2 {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .features2 .link {
+        width: fit-content;
+        padding: 20px;
+    }
+}

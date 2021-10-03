@@ -1,0 +1,76 @@
+.form {
+    margin-top: 100px;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+}
+.form1 {
+    width: 350px;
+    text-align: center;
+}
+.form1 p {
+    font-size: x-small;
+
+}
+form {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+form .con {
+    width: fit-content;
+    position: relative;
+}
+.con input {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    outline: none;
+    margin-right: 5px;
+}
+.con img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+.spa {
+    margin: 5px;
+    font-size: x-small ;
+    display: none;
+}
+.sub {
+    padding: 5px 10px;
+    color: white;
+    border: 3px solid transparent;
+    background-color:  hsl(0, 94%, 66%);
+    border-radius: 2px;
+}
+.sub:hover {
+    border-color:  hsl(0, 94%, 66%);
+    color:  hsl(0, 94%, 66%);
+    background-color: white;
+}
+@media (max-width: 499px) {
+    .form1 {
+        width: 90%;
+    }
+    form {
+        width: 90%;
+        flex-direction: column;
+    }
+    .con {
+        width: 100% !important;
+    }
+    .sub{
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 5px;
+    }
+}

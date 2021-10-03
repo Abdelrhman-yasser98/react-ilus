@@ -1,0 +1,68 @@
+
+.main  {
+    width: 700px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .description {
+    width: 45%;
+}
+.main .description p {
+    color: hsl(229, 8%, 60%);
+}
+.main .description button {
+    margin: 10px 0px;
+    padding: 8px ;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px hsl(229, 8%, 60%);
+}
+.main .description button:hover {
+    border-color: hsl(231, 69%, 60%);
+    color: hsl(229, 8%, 60%);
+    background-color: white;
+}
+.main .image {
+    width: 40%;
+    position: relative;
+    overflow: visible;
+}
+.main .image::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 80%;
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 150px;
+    top: 50%;
+    left: -140%;
+    z-index: -1;
+}
+.main .image img {
+    width: 300px
+}
+@media (max-width: 499px) {
+    .main {
+        width: 90%;
+        margin: 50px 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .main .description{
+        width: 100%;
+        text-align: center;
+        margin-top: 80px;
+    }
+    .main .image {
+        width: 100%;
+    }
+    .main .image::after{
+        left: -120%
+    }
+    .main .image img {
+        width: 100%;
+    }
+}
